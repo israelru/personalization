@@ -1,0 +1,36 @@
+[
+    {
+        "id": "${project.parent.artifactId}.chartSearchApp",
+        "description": "${project.parent.artifactId}.refApp.description",
+        "order": 10,
+        "extensions": [
+            {
+                "id": "${project.parent.artifactId}.launcheManager",
+                "extensionPointId": "org.openmrs.referenceapplication.homepageLink",
+                "type": "link",
+                "order": 10,
+                "label": "Observations",
+                "url": "admin/observations/index.htm",
+                "icon": "icon-search",
+                "requiredPrivilege": "Task: Chart Search"
+            }
+        ]
+    },
+     {
+        "id": "${project.parent.artifactId}.chartSearchApp2",
+        "description": "${project.parent.artifactId}.refApp.description",
+        "order": 10,
+        "extensions": [
+            {
+                "id": "${project.parent.artifactId}.launcheManager",
+                "extensionPointId": "patientDashboard.overallActions",
+                "type": "link",
+                "order": 10,
+                "label": "Personalization",
+                "url": "module/personalization/manage.form?patientId={{patient.uuid}}",
+                "icon": "icon-food",
+                "requiredPrivilege": "Task: Chart Search"
+            }
+        ]
+    }
+] 

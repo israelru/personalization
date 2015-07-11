@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="org.openmrs.module.personalization">
+
+	<class name="personalization"
+		table="${project.parent.artifactId}_personalization2">
+		<id name="personalizationId" type="int" column="personalization_id" unsaved-value="0">
+                <generator class="native" />
+        </id>
+        <discriminator column="personalization_id" insert="false" />
+        <property name="uuid" type="java.lang.String" column="uuid" length="38" unique="true" />
+        <property name="breakfast" type="java.lang.String" column="breakfast" length="255" />
+        <property name="lunch" type="java.lang.String" column="lunch" length="255" />
+        <property name="evening" type="java.lang.String" column="evening" length="255" />
+        <property name="breakfastAlarm" type="java.lang.String" column="breakfastAlarm" length="255" />
+        <property name="lunchAlarm" type="java.lang.String" column="lunchAlarm" length="255" />
+        <property name="eveningAlarm" type="java.lang.String" column="eveningAlarm" length="255" />
+        <property name="day" type="java.lang.String" column="day" length="255" /> 
+        <property name="day1" type="java.lang.String" column="day1" length="255" /> 
+        <property name="day2" type="java.lang.String" column="day2" length="255" /> 
+        <property name="time" type="java.lang.String" column="time" length="255" /> 
+        <property name="time2" type="java.lang.String" column="time2" length="255" /> 
+        
+	</class>
+
+
+</hibernate-mapping>
