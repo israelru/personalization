@@ -10,23 +10,25 @@
     -->
     
 
-    <changeSet author="israelRukshin2" id="20131010-8">
+    <changeSet author="israelRukshin2" id="20131010-9">
         <comment>Create the department table</comment>
-        <createTable tableName="personalization_personalization2">
+        <createTable tableName="personalization_personalization3">
              <column autoIncrement="true" name="personalization_id" type="int">
                 <constraints primaryKey="true" nullable="false" />
             </column>
             <column name="breakfast" type="varchar(255)" />
             <column name="lunch" type="varchar(255)" />
             <column name="evening" type="varchar(255)" />
+            <column name="fasting" type="varchar(255)" />
             <column name="breakfastAlarm" type="varchar(255)" />
             <column name="lunchAlarm" type="varchar(255)" />
             <column name="eveningAlarm" type="varchar(255)" />
+            <column name="fastingAlarm" type="varchar(255)" />
             <column name="day" type="varchar(255)" />
+            <column name="dayAlarm" type="varchar(255)" />
             <column name="day1" type="varchar(255)" />
             <column name="day2" type="varchar(255)" />
             <column name="time" type="varchar(255)" />
-            <column name="time2" type="varchar(255)" />
             <column name="uuid" type="char(38)" />
         </createTable>
     </changeSet>

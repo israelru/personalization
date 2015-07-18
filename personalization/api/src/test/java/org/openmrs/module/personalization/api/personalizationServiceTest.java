@@ -14,6 +14,7 @@
 package org.openmrs.module.personalization.api;
 
 import static org.junit.Assert.*;
+
 import org.junit.Test;
 import org.openmrs.api.context.Context;
 import org.openmrs.test.BaseModuleContextSensitiveTest;
@@ -26,5 +27,11 @@ public class  personalizationServiceTest extends BaseModuleContextSensitiveTest 
 	@Test
 	public void shouldSetupContext() {
 		assertNotNull(Context.getService(personalizationService.class));
+	}
+	
+	@Test
+	public void getPersonalizationList() {
+		personalizationService perS = Context.getService(personalizationService.class);
+		assertNotNull(perS.getAllPersonalizations());	
 	}
 }

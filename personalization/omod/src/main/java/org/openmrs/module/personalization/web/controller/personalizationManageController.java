@@ -83,13 +83,15 @@ public class  personalizationManageController {
                                    @RequestParam(required = false, value = "action") String action,
                                    @RequestParam(required = false, value = "breakfast") String breakfast,
                                    @RequestParam(required = false, value = "evening") String evening,
+                                   @RequestParam(required = false, value = "fasting") String fasting,
                                    @RequestParam(required = false, value = "lunch") String lunch,
                                    @RequestParam(required = false, value = "breakfastAlarm") String breakfastAlarm,
                                    @RequestParam(required = false, value = "eveningAlarm") String eveningAlarm,
                                    @RequestParam(required = false, value = "lunchAlarm") String lunchAlarm,
+                                   @RequestParam(required = false, value = "fastingAlarm") String fastingAlarm,
                                    @RequestParam(required = false, value = "day") String day,
                                    @RequestParam(required = false, value = "time") String time,
-                                   @RequestParam(required = false, value = "time2") String time2,
+                                   @RequestParam(required = false, value = "dayAlarm") String dayAlarm,
                                    @RequestParam(required = false, value = "day1") String day1,
                                    @RequestParam(required = false, value = "day2") String day2,
                                    @RequestParam(required = true, value = "patientId") String patientId,
@@ -104,15 +106,17 @@ public class  personalizationManageController {
 		per.setEvening(evening);
 		per.setBreakfast(breakfast);
 		per.setLunch(lunch);
+		per.setFasting(fasting);
 		per.setBreakfastAlarm(breakfastAlarm);
 		per.setLunchAlarm(lunchAlarm);
 		per.setEveningAlarm(eveningAlarm);
+		per.setFastingAlarm(fastingAlarm);
+		per.setUuid(patientId);
 		per.setDay(day);
+		per.setTime(time);
+		per.setDayAlarm(dayAlarm);
 		per.setDay1(day1);
 		per.setDay2(day2);
-		per.setUuid(patientId);
-		per.setTime(time);
-		per.setTime2(time2);
 		
 		
         log.warn("Action: " + action);

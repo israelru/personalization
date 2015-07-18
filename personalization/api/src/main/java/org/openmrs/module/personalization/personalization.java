@@ -29,14 +29,16 @@ public class personalization extends BaseOpenmrsObject implements Serializable {
 	private String breakfast;
 	private String lunch;
 	private String evening;
+	private String fasting;
 	private String breakfastAlarm;
 	private String lunchAlarm;
 	private String eveningAlarm;
+	private String fastingAlarm;
 	private String day;
+	private String dayAlarm;
 	private String day1;
 	private String day2;
 	private String time;
-	private String time2;
 	
 	
 	
@@ -128,14 +130,30 @@ public class personalization extends BaseOpenmrsObject implements Serializable {
         this.time = time;
     }
     	
-    public String getTime2() {
-        return time2;
+    public String getFasting() {
+        return fasting;
      }
      
-     public void setTime2(String time2) {
-        this.time2 = time2;
+     public void setFasting(String fasting) {
+        this.fasting = fasting;
      }
+     
+     public String getFastingAlarm() {
+         return fastingAlarm;
+      }
+      
+      public void setFastingAlarm(String fastingAlarm) {
+         this.fastingAlarm = fastingAlarm;
+      }
     
+      public String getDayAlarm() {
+          return dayAlarm;
+       }
+       
+       public void setDayAlarm(String dayAlarm) {
+          this.dayAlarm = dayAlarm;
+       }
+     
 	////////////////////////////////////////////////////////////////
 	
 	
