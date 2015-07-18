@@ -4,12 +4,12 @@
 
 	<!-- Module Properties -->
 	<id>personalization</id>
-	<name>personalization Module</name>
+	<name>Mobidoc Module</name>
 	<version>1.0-SNAPSHOT</version>
 	<package>org.openmrs.module.personalization</package>
 	<author>israel</author>
 	<description>
-		do somthing good
+		Do somthing good
 	</description>
 	<updateURL>https://modules.openmrs.org/modules/download/personalization/update.rdf</updateURL>
 	<require_version>1.8.2</require_version>
